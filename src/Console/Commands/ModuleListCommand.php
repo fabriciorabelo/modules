@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Console\Commands;
+namespace Fabriciorabelo\Modules\Console\Commands;
 
-use Caffeinated\Modules\Modules;
+use Fabriciorabelo\Modules\Modules;
 use Illuminate\Console\Command;
 
 class ModuleListCommand extends Command
@@ -17,7 +17,7 @@ class ModuleListCommand extends Command
 	protected $description = 'List all application modules';
 
 	/**
-	 * @var \Caffeinated\Modules\Modules
+	 * @var \Fabriciorabelo\Modules\Modules
 	 */
 	protected $module;
 
@@ -29,7 +29,7 @@ class ModuleListCommand extends Command
 	/**
 	 * Create a new command instance.
 	 *
-	 * @param \Caffeinated\Modules\Modules $module
+	 * @param \Fabriciorabelo\Modules\Modules $module
 	 */
 	public function __construct(Modules $module)
 	{

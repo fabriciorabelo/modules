@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Console\Handlers;
+namespace Fabriciorabelo\Modules\Console\Handlers;
 
-use Caffeinated\Modules\Modules;
+use Fabriciorabelo\Modules\Modules;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class ModuleMakeRequestHandler
 {
 	/**
-	 * @var \Caffeinated\Modules\Modules
+	 * @var \Fabriciorabelo\Modules\Modules
 	 */
 	protected $module;
 
@@ -36,7 +36,7 @@ class ModuleMakeRequestHandler
 	/**
 	 * Constructor method.
 	 *
-	 * @param \Caffeinated\Modules\Modules      $module
+	 * @param \Fabriciorabelo\Modules\Modules      $module
 	 * @param \Illuminate\Filesystem\Filesystem $finder
 	 */
 	public function __construct(Modules $module, Filesystem $finder)

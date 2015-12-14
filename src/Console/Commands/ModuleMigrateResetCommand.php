@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Console\Commands;
+namespace Fabriciorabelo\Modules\Console\Commands;
 
-use Caffeinated\Modules\Modules;
+use Fabriciorabelo\Modules\Modules;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Database\Migrations\Migrator;
@@ -24,7 +24,7 @@ class ModuleMigrateResetCommand extends Command
 	protected $description = 'Rollback all database migrations for a specific or all modules';
 
 	/**
-	 * @var \Caffeinated\Modules\Modules
+	 * @var \Fabriciorabelo\Modules\Modules
 	 */
 	protected $module;
 
@@ -41,7 +41,7 @@ class ModuleMigrateResetCommand extends Command
 	/**
 	 * Create a new command instance.
 	 *
-	 * @param \Caffeinated\Modules\Modules             $module
+	 * @param \Fabriciorabelo\Modules\Modules             $module
 	 * @param \Illuminate\Filesystem\Filesystem        $files
 	 * @param \Illuminate\Database\Migrations\Migrator $migrator
 	 */

@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Console\Commands;
+namespace Fabriciorabelo\Modules\Console\Commands;
 
-use Caffeinated\Modules\Console\Handlers\ModuleMakeHandler;
+use Fabriciorabelo\Modules\Console\Handlers\ModuleMakeHandler;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -18,14 +18,14 @@ class ModuleMakeCommand extends Command
 	protected $description = 'Create a new module';
 
 	/**
-	 * @var \CCaffeinated\Modules\Handlers\Console\Commands\ModuleMakeHandler
+	 * @var \CFabriciorabelo\Modules\Handlers\Console\Commands\ModuleMakeHandler
 	 */
 	protected $handler;
 
 	/**
 	 * Create a new command instance.
 	 *
-	 * @param \Caffeinated\Modules\Handlers\ModuleMakeHandler $handler
+	 * @param \Fabriciorabelo\Modules\Handlers\ModuleMakeHandler $handler
 	 */
 	public function __construct(ModuleMakeHandler $handler)
 	{

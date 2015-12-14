@@ -1,4 +1,4 @@
 <?php
-namespace Caffeinated\Modules\Exceptions;
+namespace Fabriciorabelo\Modules\Exceptions;
 
 class FileMissingException extends \Exception {}

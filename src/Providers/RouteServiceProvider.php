@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Modules\Providers;
+namespace Fabriciorabelo\Modules\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -14,5 +14,5 @@ abstract class RouteServiceProvider extends ServiceProvider
 	{
 		// Intentionally left empty to prevent overwriting the
 		// root controller namespace.
-	}	
+	}
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Modules\Providers;
+namespace Fabriciorabelo\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -32,9 +32,9 @@ class RepositoryServiceProvider extends ServiceProvider
 		if ($driver == 'Custom') {
 			$namespace = config('modules.custom_driver');
 		} else {
-			$namespace = "Caffeinated\Modules\Repositories\\$driver\ModuleRepository";
+			$namespace = "Fabriciorabelo\Modules\Repositories\\$driver\ModuleRepository";
 		}
-		
-		$this->app->bind('Caffeinated\Modules\Repositories\Interfaces\ModuleRepositoryInterface', $namespace);
+
+		$this->app->bind('Fabriciorabelo\Modules\Repositories\Interfaces\ModuleRepositoryInterface', $namespace);
 	}
 }

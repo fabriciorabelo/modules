@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Console\Commands;
+namespace Fabriciorabelo\Modules\Console\Commands;
 
-use Caffeinated\Modules\Modules;
+use Fabriciorabelo\Modules\Modules;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
@@ -19,14 +19,14 @@ class ModuleSeedCommand extends Command
 	protected $description = 'Seed the database with records for a specific or all modules';
 
 	/**
-	 * @var \Caffeinated\Modules\Modules
+	 * @var \Fabriciorabelo\Modules\Modules
 	 */
 	protected $module;
 
 	/**
 	 * Create a new command instance.
 	 *
-	 * @param \Caffeinated\Modules\Modules $module
+	 * @param \Fabriciorabelo\Modules\Modules $module
 	 */
 	public function __construct(Modules $module)
 	{

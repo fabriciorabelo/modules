@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Modules;
+namespace Fabriciorabelo\Modules;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -35,16 +35,16 @@ class ModulesServiceProvider extends ServiceProvider
 			__DIR__.'/../config/modules.php', 'modules'
 		);
 
-		$this->app->register('Caffeinated\Modules\Providers\RepositoryServiceProvider');
+		$this->app->register('Fabriciorabelo\Modules\Providers\RepositoryServiceProvider');
 
-		$this->app->register('Caffeinated\Modules\Providers\MigrationServiceProvider');
+		$this->app->register('Fabriciorabelo\Modules\Providers\MigrationServiceProvider');
 
-		$this->app->register('Caffeinated\Modules\Providers\ConsoleServiceProvider');
+		$this->app->register('Fabriciorabelo\Modules\Providers\ConsoleServiceProvider');
 
 		$this->app->singleton('modules', function ($app) {
-			$repository = $app->make('Caffeinated\Modules\Repositories\Interfaces\ModuleRepositoryInterface');
+			$repository = $app->make('Fabriciorabelo\Modules\Repositories\Interfaces\ModuleRepositoryInterface');
 
-			return new \Caffeinated\Modules\Modules($app, $repository);
+			return new \Fabriciorabelo\Modules\Modules($app, $repository);
 		});
 	}
 

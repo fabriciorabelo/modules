@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules;
+namespace Fabriciorabelo\Modules;
 
-use Caffeinated\Modules\Repositories\Interfaces\ModuleRepositoryInterface;
+use Fabriciorabelo\Modules\Repositories\Interfaces\ModuleRepositoryInterface;
 use Illuminate\Foundation\Application;
 
 class Modules implements ModuleRepositoryInterface
@@ -12,14 +12,14 @@ class Modules implements ModuleRepositoryInterface
 	protected $app;
 
 	/**
-	 * @var \Caffeinated\Modules\Repositories\Interfaces\ModuleRepositoryInterface
+	 * @var \Fabriciorabelo\Modules\Repositories\Interfaces\ModuleRepositoryInterface
 	 */
 	protected $repository;
 
 	/**
 	 * Constructor method.
 	 *
-	 * @param \Caffeinated\Modules\Repositories\Interfaces\ModuleRepositoryInterface  $repository
+	 * @param \Fabriciorabelo\Modules\Repositories\Interfaces\ModuleRepositoryInterface  $repository
 	 */
 	public function __construct(Application $app, ModuleRepositoryInterface $repository)
 	{
@@ -46,7 +46,7 @@ class Modules implements ModuleRepositoryInterface
 	 *
 	 * @param  string $properties
 	 * @return string
-	 * @throws \Caffeinated\Modules\Exception\FileMissingException
+	 * @throws \Fabriciorabelo\Modules\Exception\FileMissingException
 	 */
 	protected function registerServiceProvider($properties)
 	{

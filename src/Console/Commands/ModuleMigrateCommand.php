@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Console\Commands;
+namespace Fabriciorabelo\Modules\Console\Commands;
 
-use Caffeinated\Modules\Modules;
+use Fabriciorabelo\Modules\Modules;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Migrations\Migrator;
@@ -24,7 +24,7 @@ class ModuleMigrateCommand extends Command
 	protected $description = 'Run the database migrations for a specific or all modules';
 
 	/**
-	 * @var \Caffeinated\Modules\Modules
+	 * @var \Fabriciorabelo\Modules\Modules
 	 */
 	protected $module;
 
@@ -37,7 +37,7 @@ class ModuleMigrateCommand extends Command
 	 * Create a new command instance.
 	 *
 	 * @param \Illuminate\Database\Migrations\Migrator $migrator
-	 * @param \Caffeinated\Modules\Modules             $module
+	 * @param \Fabriciorabelo\Modules\Modules             $module
 	 */
 	public function __construct(Migrator $migrator, Modules $module)
 	{

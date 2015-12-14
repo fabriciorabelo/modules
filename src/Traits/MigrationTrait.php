@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Modules\Traits;
+namespace Fabriciorabelo\Modules\Traits;
 
 trait MigrationTrait
 {

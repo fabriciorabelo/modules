@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Modules\Repositories\Interfaces;
+namespace Fabriciorabelo\Modules\Repositories\Interfaces;
 
 interface ModuleRepositoryInterface
 {

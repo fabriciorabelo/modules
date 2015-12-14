@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Repositories\Local;
+namespace Fabriciorabelo\Modules\Repositories\Local;
 
-use Caffeinated\Modules\Repositories\Repository;
+use Fabriciorabelo\Modules\Repositories\Repository;
 
 class ModuleRepository extends Repository
 {

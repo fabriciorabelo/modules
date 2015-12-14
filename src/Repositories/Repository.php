@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Modules\Repositories;
+namespace Fabriciorabelo\Modules\Repositories;
 
-use Caffeinated\Modules\Repositories\Interfaces\ModuleRepositoryInterface;
+use Fabriciorabelo\Modules\Repositories\Interfaces\ModuleRepositoryInterface;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Filesystem\Filesystem;
 

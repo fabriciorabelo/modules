@@ -1,8 +1,8 @@
 <?php
-namespace Caffeinated\Modules\Console\Commands;
+namespace Fabriciorabelo\Modules\Console\Commands;
 
-use Caffeinated\Modules\Modules;
-use Caffeinated\Modules\Traits\MigrationTrait;
+use Fabriciorabelo\Modules\Modules;
+use Fabriciorabelo\Modules\Traits\MigrationTrait;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -24,14 +24,14 @@ class ModuleMigrateRollbackCommand extends Command
 	protected $description = 'Rollback the last database migrations for a specific or all modules';
 
 	/**
-	 * @var \Caffeinated\Modules\Modules
+	 * @var \Fabriciorabelo\Modules\Modules
 	 */
 	protected $module;
 
 	/**
 	 * Create a new command instance.
 	 *
-	 * @param \Caffeinated\Modules\Modules $module
+	 * @param \Fabriciorabelo\Modules\Modules $module
 	 */
 	public function __construct(Modules $module)
 	{

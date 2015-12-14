@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Modules\Facades;
+namespace Fabriciorabelo\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
